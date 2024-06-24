@@ -239,7 +239,7 @@ function Quiz() {
       {showScore ? (
         <div className="score-section">
           Você acertou {score} de {questions.length} perguntas.
-          <button onClick={handleRestartQuiz}>Reiniciar Quiz</button>
+          <button className='answer-button' onClick={handleRestartQuiz}>Reiniciar Quiz</button>
         </div>
       ) : (
         <>
