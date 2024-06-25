@@ -15,6 +15,8 @@
 
 h1 {
   font-size: 2em;
+  margin-top: 0px;
+  color:#11eec8;
 }
 
 a {
@@ -39,11 +41,10 @@ body {
 #root {
   max-width: 1280px;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
-/* Estilos específicos para os botões do quiz */
 .quiz {
   background-color: #2d2d2d;
   padding: 20px;
@@ -52,7 +53,7 @@ body {
 }
 
 .question-section {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .question-count {
@@ -75,7 +76,7 @@ body {
   padding: 10px;
   margin-bottom: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   background-color: #00a0a6;
   color: #fff;
   font-size: 18px;
@@ -84,12 +85,12 @@ body {
 }
 
 .answer-button.correct {
-  background-color: #4caf50 !important; /* Verde */
+  background-color: #4caf50 !important; 
   color: #fff;
 }
 
 .answer-button.incorrect {
-  background-color: #f44336 !important; /* Vermelho */
+  background-color: #f44336 !important; 
   color: #fff;
 }
 
@@ -126,14 +127,14 @@ body {
   font-size: 18px;
   border: none;
   border-radius: 5px;
-  background-color: #c0c0c0; /* Cinza quando desativado */
+  background-color: #c0c0c0;
   color: #fff;
   cursor: not-allowed;
   transition: background-color 0.3s ease;
 }
 
 .next-question:enabled {
-  background-color: #00a0a6;/* Cor normal quando ativado */
+  background-color: #00a0a6;
   cursor: pointer;
 }
 
