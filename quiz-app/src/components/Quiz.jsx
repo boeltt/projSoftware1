@@ -234,12 +234,15 @@ function Quiz() {
     setCorrectAnswer(null);
   };
 
+  const percentageScore = ((score / questions.length) * 100).toFixed(2);
+
   return (
     <div className="quiz">
       {showScore ? (
         <div className="score-section">
-          Você acertou {score} de {questions.length} perguntas.
-          <button className='answer-button' onClick={handleRestartQuiz}>Reiniciar Quiz</button>
+          <p>Você acertou {score} de {questions.length} perguntas.</p>
+          <p>Isso equivale a {percentageScore}% de acertos.</p>
+          <button onClick={handleRestartQuiz}>Reiniciar Quiz</button>
         </div>
       ) : (
         <>
